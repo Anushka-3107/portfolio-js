@@ -1,0 +1,155 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.banner{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 100px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+header .logo{
+    color: rgb(77, 76, 76);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+header .logo span{
+    color: rgb(255, 0, 0)
+}
+
+
+header ul{
+    display: flex;
+    gap: 40px;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+   font-size: 16px;
+   font-weight: 600;
+   color: rgb(253, 0, 0);
+   transition: 0.5s;
+}
+
+
+.content{
+    position: relative;
+    max-width: 500px;
+}
+
+.content h2{
+    font-size: 5.5em;   
+    color: aqua;  
+    transition: 0.5s;
+}
+
+.content span{
+    color: blueviolet;
+}
+
+.content p{
+    font-size: 1.2em;
+    color: pink;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.content button{
+    position: relative;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content button.connect{
+    background:transparent;
+    color: black;
+
+}
+
+
+.dayNight{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+}
+
+.dayNight ion-icon:nth-child(2),
+.banner.night .dayNight ion-icon:nth-child(1)
+{
+    display: none;
+}
+
+.banner.night .dayNight ion-icon:nth-child(2){
+    display: block;
+}
+
+.banner.night{
+    background-color: #333;
+}
+
+.banner.night .dayNight{
+    color: #fff;
+    background: #444;
+}
+
+.banner.night header .logo,
+.banner.night .content h2,
+.banner.night .content p, 
+.banner.night .content button.connect,
+.banner.night header ul li a
+{
+    color: #fff;
+}
+
+
