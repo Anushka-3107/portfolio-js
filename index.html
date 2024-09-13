@@ -4,35 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <section class="banner">
         <header>
             <a href="#" class="logo">Anu<span>s</span>hka</a>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+
+            <!-- this has nav elements +day night toggle btn -->
+            <div class="nav-container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <div class="dayNight">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </div>
+            </div>
         </header>
 
-        <div class="content">
-            <h2>I am <span id="text"></span></h2>
-            <p>Hello 👋</p>
-            <button>Resume</button>
-            <button class="connect">Let's connect</button>
+        <!-- this div contains content + button div -->
+        <div class="content-container">
+            <div class="content">
+                <h2>I am <span id="text"></span></h2>
+                <p>Hello 👋</p>
+            </div>
+    
+            <div class="btn">
+                <button><a href="https://drive.google.com/file/d/1Y0L5Ut9XZYW559grfKQ78FpHhvc9gh7P/view?usp=drive_link"
+                target="_blank">Resume</a></button>
+                <button class="connect"><a href="https://www.linkedin.com/in/anushka31/" 
+                target="_blank">Let's connect</a></button>
+            </div>
         </div>
-
-
-        <div class="dayNight">
-            <ion-icon name="moon-outline"></ion-icon>
-            <ion-icon name="sunny-outline"></ion-icon>
-        </div>
-
     </section>
+
+     <!-- this div is for projects -->
+     <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <img src="https://plus.unsplash.com/premium_photo-1666900440561-94dcb6865554?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tfGVufDB8fDB8fHww" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, exercitationem?</p>
+            </div>
+
+            <div class="project">
+                <img src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fHww" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, exercitationem?</p>
+            </div>
+
+            <div class="project">
+                <img src="https://images.pexels.com/photos/4016579/pexels-photo-4016579.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, exercitationem?</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

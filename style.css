@@ -1,12 +1,9 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
 
 .banner{
     display: flex;
@@ -19,7 +16,6 @@
     transition: 0.5s;
 }
 
-
 header{
     position: absolute;
     top: 0;
@@ -31,8 +27,6 @@ header{
     justify-content: space-between;
 }
 
-
-
 header .logo{
     color: rgb(77, 76, 76);
     text-decoration: none;
@@ -42,31 +36,34 @@ header .logo{
 }
 
 header .logo span{
-    color: rgb(255, 0, 0)
+    color: rgb(255, 0, 0);
 }
 
+.nav-container{
+    display: flex;
+    align-items: center;
+}
 
 header ul{
     display: flex;
     gap: 40px;
-}
-
-header ul li{
     list-style: none;
+    margin-right: 20px;
 }
 
 header ul li a{
     text-decoration: none;
-   font-size: 16px;
-   font-weight: 600;
-   color: rgb(253, 0, 0);
-   transition: 0.5s;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(253, 0, 0);
+    transition: 0.5s;
 }
 
 
 .content{
     position: relative;
     max-width: 500px;
+    margin-bottom: 20px;
 }
 
 .content h2{
@@ -86,7 +83,15 @@ header ul li a{
     transition: 0.5s;
 }
 
-.content button{
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn button{
     position: relative;
     background-color: orange;
     color: #fff;
@@ -101,55 +106,114 @@ header ul li a{
     transition: 0.5s;
 }
 
-.content button.connect{
+.btn button.connect{
     background:transparent;
     color: black;
+}
 
+.btn button a{
+    text-decoration: none;
+    color: #fff;
 }
 
 
-.dayNight{
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    width: 60px;
-    height: 60px;
-    background-color: #f0f0f0;
-    border-radius: 50%;
+.btn button.connect a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+.dayNight {
+    cursor: pointer;
+    font-size: 24px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 2em;
 }
 
 .dayNight ion-icon:nth-child(2),
-.banner.night .dayNight ion-icon:nth-child(1)
-{
+.banner.night .dayNight ion-icon:nth-child(1) {
     display: none;
 }
 
-.banner.night .dayNight ion-icon:nth-child(2){
+.banner.night .dayNight ion-icon:nth-child(2) {
     display: block;
 }
 
-.banner.night{
+.banner.night {
     background-color: #333;
 }
 
-.banner.night .dayNight{
+.banner.night .dayNight {
     color: #fff;
-    background: #444;
 }
 
 .banner.night header .logo,
 .banner.night .content h2,
 .banner.night .content p, 
 .banner.night .content button.connect,
-.banner.night header ul li a
-{
+.banner.night header ul li a {
     color: #fff;
 }
 
 
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 163, 163);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+}
+
+.projects h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    margin: 0 20px;         
+    width: 300px;      
+    overflow: hidden;  
+}
+
+.project img{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+
+.project h3{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 9px;
+}
+
+.project p{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 9px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    text-align: justify;
+ 
+    
+}
